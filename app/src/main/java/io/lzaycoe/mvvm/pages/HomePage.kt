@@ -1,4 +1,4 @@
-package io.lzaycoe.mvvm.view
+package io.lzaycoe.mvvm.pages
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import io.lzaycoe.mvvm.viewmodel.HomeViewModel
+import io.lzaycoe.mvvm.data.viewmodel.HomeViewModel
 
 @Composable
 fun HomePage(modifier: Modifier = Modifier, viewModel: HomeViewModel) {

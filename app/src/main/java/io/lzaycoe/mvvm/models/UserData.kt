@@ -1,4 +1,4 @@
-package io.lzaycoe.mvvm.model
+package io.lzaycoe.mvvm.models
 
 data class UserData (
     var name: String,

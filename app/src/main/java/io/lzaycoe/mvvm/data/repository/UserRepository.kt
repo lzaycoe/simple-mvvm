@@ -1,5 +1,6 @@
-package io.lzaycoe.mvvm.model
+package io.lzaycoe.mvvm.data.repository
 
+import io.lzaycoe.mvvm.models.UserData
 import kotlinx.coroutines.delay
 
 class UserRepository {

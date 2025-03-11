@@ -1,16 +1,17 @@
-package io.lzaycoe.mvvm.viewmodel
+package io.lzaycoe.mvvm.data.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import io.lzaycoe.mvvm.model.UserData
-import io.lzaycoe.mvvm.model.UserRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import io.lzaycoe.mvvm.models.UserData
+import io.lzaycoe.mvvm.data.repository.UserRepository
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class HomeViewModel : ViewModel() {
-
-    private val userRepository: UserRepository = UserRepository()
+@HiltViewModel
+class HomeViewModel @Inject constructor(private val userRepository: UserRepository) : ViewModel() {
 
     private val _userData = MutableLiveData<UserData>()
     val userData: LiveData<UserData> = _userData

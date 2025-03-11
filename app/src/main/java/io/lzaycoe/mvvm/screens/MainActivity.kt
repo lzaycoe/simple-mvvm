@@ -1,4 +1,4 @@
-package io.lzaycoe.mvvm
+package io.lzaycoe.mvvm.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,10 +9,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModelProvider
+import dagger.hilt.android.AndroidEntryPoint
 import io.lzaycoe.mvvm.ui.theme.MvvmtemplateTheme
-import io.lzaycoe.mvvm.view.HomePage
-import io.lzaycoe.mvvm.viewmodel.HomeViewModel
+import io.lzaycoe.mvvm.pages.HomePage
+import io.lzaycoe.mvvm.data.viewmodel.HomeViewModel
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
